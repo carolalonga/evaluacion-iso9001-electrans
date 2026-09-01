@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evaluación ISO 9001:2015 | Electrans</title>
+  <style>
+    :root{--azul:#436f8a;--azul-claro:#e8f1f5;--lavanda:#eee8f6;--texto:#24323a}
+    *{box-sizing:border-box}body{margin:0;background:linear-gradient(135deg,var(--azul-claro),var(--lavanda));color:var(--texto);font-family:Arial,sans-serif;line-height:1.45}
+    main{width:min(760px,92%);margin:28px auto}.cabecera,.tarjeta{background:#fffffff5;border-radius:18px;box-shadow:0 8px 25px #4055641a}
+    .cabecera{padding:28px;border-top:10px solid var(--azul)}h1{margin:0 0 8px;font-size:clamp(25px,5vw,38px);color:var(--azul)}
+    .cabecera p{margin:5px 0}.datos{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px}.campo{display:flex;flex-direction:column;gap:6px}
+    input[type=text]{padding:13px;border:1px solid #aebdc5;border-radius:10px;font-size:16px}.tarjeta{padding:22px;margin:18px 0;border-left:8px solid var(--azul)}
+    .tarjeta:nth-of-type(4n+1){border-color:#8bbfa2}.tarjeta:nth-of-type(4n+2){border-color:#e8c76f}.tarjeta:nth-of-type(4n+3){border-color:#ad9bc8}.tarjeta:nth-of-type(4n){border-color:#dc9e97}
+    fieldset{border:0;padding:0;margin:0}legend{font-weight:700;font-size:18px;margin-bottom:14px}.opcion{display:block;padding:10px 12px;margin:8px 0;border-radius:10px;background:#f7f9fa;cursor:pointer}.opcion:hover{background:var(--azul-claro)}
+    button{display:block;width:100%;border:0;border-radius:12px;background:var(--azul);color:white;padding:16px;font-size:18px;font-weight:700;cursor:pointer}button:hover{filter:brightness(.92)}
+    .nota{text-align:center;font-size:14px;margin:14px 0 30px}.error{background:#ffe8e5;border:1px solid #d46f62;padding:12px;border-radius:10px;margin:15px 0;display:none}.oculto{position:absolute;left:-9999px}.obligatorio{color:#a33}
+    @media(max-width:600px){.datos{grid-template-columns:1fr}.cabecera,.tarjeta{padding:18px}}
+  </style>
+</head>
+<body>
+<main>
+  <section class="cabecera">
+    <h1>Evaluación ISO 9001:2015</h1>
+    <p><strong>Electrans Ltda.</strong> — Capacitación para trabajadores técnicos</p>
+    <p>Responde las 7 preguntas. Cada respuesta correcta equivale a 14,29 % y se aprueba con 5 respuestas correctas (71,43 %).</p>
+    <div class="datos">
+      <label class="campo">Nombre y apellido <span class="obligatorio">*</span><input name="Nombre" form="evaluacion" type="text" required autocomplete="name"></label>
+      <label class="campo">Cargo o área <span class="obligatorio">*</span><input name="Cargo_o_area" form="evaluacion" type="text" required></label>
+    </div>
+  </section>
+  <form id="evaluacion" action="https://formsubmit.co/carolalonga@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="Resultado evaluación ISO 9001:2015 - Electrans">
+    <input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="false">
+    <input type="text" name="_honey" class="oculto" tabindex="-1" autocomplete="off">
+    <input type="hidden" name="Puntaje" id="puntaje"><input type="hidden" name="Porcentaje" id="porcentaje"><input type="hidden" name="Resultado" id="resultado">
+    <section class="tarjeta"><fieldset><legend>1. ¿Qué significa calidad en nuestro trabajo?</legend>
+      <label class="opcion"><input required type="radio" name="P1_Calidad" value="A - Trabajar rápido aunque falten registros"> A) Trabajar rápidamente, aunque no se completen los registros.</label>
+      <label class="opcion"><input type="radio" name="P1_Calidad" value="B - Cumplir requisitos y entregar un resultado confiable"> B) Cumplir los requisitos acordados y entregar un resultado confiable.</label>
+      <label class="opcion"><input type="radio" name="P1_Calidad" value="C - No informar errores"> C) Evitar informar los errores para no retrasar el proceso.</label>
+    </fieldset></section>
+    <section class="tarjeta"><fieldset><legend>2. ¿Qué es la Norma ISO 9001:2015?</legend>
+      <label class="opcion"><input required type="radio" name="P2_Norma_ISO" value="A - Norma internacional para gestionar la calidad"> A) Una norma internacional que establece requisitos para gestionar la calidad.</label>
+      <label class="opcion"><input type="radio" name="P2_Norma_ISO" value="B - Procedimiento de reparación"> B) Un procedimiento exclusivo para reparar componentes eléctricos.</label>
+      <label class="opcion"><input type="radio" name="P2_Norma_ISO" value="C - Reglamento de prevención"> C) Un reglamento relacionado únicamente con prevención de riesgos.</label>
+    </fieldset></section>
+    <section class="tarjeta"><fieldset><legend>3. ¿Para qué implementamos ISO 9001:2015 en Electrans?</legend>
+      <label class="opcion"><input required type="radio" name="P3_Implementacion" value="A - Aumentar documentos"> A) Para aumentar la cantidad de documentos sin modificar la forma de trabajar.</label>
+      <label class="opcion"><input type="radio" name="P3_Implementacion" value="B - Ordenar, controlar, satisfacer y mejorar"> B) Para trabajar ordenadamente, controlar procesos, satisfacer al cliente y mejorar.</label>
+      <label class="opcion"><input type="radio" name="P3_Implementacion" value="C - Responsabilidad exclusiva del SGI"> C) Para que solamente el SGI controle la calidad.</label>
+    </fieldset></section>
+    <section class="tarjeta"><fieldset><legend>4. Antes de utilizar un procedimiento, ¿qué debemos verificar?</legend>
+      <label class="opcion"><input required type="radio" name="P4_Procedimiento" value="A - Documento correcto y vigente"> A) Que sea el documento correcto y se encuentre vigente.</label>
+      <label class="opcion"><input type="radio" name="P4_Procedimiento" value="B - Documento más corto"> B) Que sea el documento más corto y fácil de utilizar.</label>
+      <label class="opcion"><input type="radio" name="P4_Procedimiento" value="C - Utilizado por otro trabajador"> C) Que haya sido utilizado anteriormente por otro trabajador.</label>
+    </fieldset></section>
+    <section class="tarjeta"><fieldset><legend>5. ¿Cómo debe completarse un registro de calidad?</legend>
+      <label class="opcion"><input required type="radio" name="P5_Registros" value="A - Aproximadamente al finalizar la semana"> A) De manera aproximada y al finalizar la semana.</label>
+      <label class="opcion"><input type="radio" name="P5_Registros" value="B - Solo ante auditoría"> B) Solamente cuando sea solicitado durante una auditoría.</label>
+      <label class="opcion"><input type="radio" name="P5_Registros" value="C - Legible, completo, objetivo, oportuno y trazable"> C) De manera legible, completa, objetiva, oportuna y trazable.</label>
+    </fieldset></section>
+    <section class="tarjeta"><fieldset><legend>6. ¿Qué debemos hacer al detectar un trabajo no conforme?</legend>
+      <label class="opcion"><input required type="radio" name="P6_No_conformidad" value="A - Detener, identificar, controlar, informar y registrar"> A) Detener, identificar, controlar, informar y registrar la desviación.</label>
+      <label class="opcion"><input type="radio" name="P6_No_conformidad" value="B - Continuar si parece poco importante"> B) Continuar si consideramos que el problema no es importante.</label>
+      <label class="opcion"><input type="radio" name="P6_No_conformidad" value="C - Corregir sin informar"> C) Corregirlo sin informar ni dejar evidencia.</label>
+    </fieldset></section>
+    <section class="tarjeta"><fieldset><legend>7. El instrumento tiene su calibración vencida. ¿Qué corresponde hacer?</legend>
+      <label class="opcion"><input required type="radio" name="P7_Calibracion" value="A - Continuar si el resultado cumple"> A) Continuar si el resultado se encuentra dentro del criterio de aceptación.</label>
+      <label class="opcion"><input type="radio" name="P7_Calibracion" value="B - Detener, informar y evaluar mediciones afectadas"> B) Detener la actividad, informar y evaluar las mediciones que podrían estar afectadas.</label>
+      <label class="opcion"><input type="radio" name="P7_Calibracion" value="C - Cambiar fecha y usar una vez más"> C) Cambiar la fecha del registro y utilizar el instrumento una última vez.</label>
+    </fieldset></section>
+    <div id="error" class="error" role="alert">Debes completar tu nombre, cargo o área y responder las 7 preguntas.</div>
+    <button type="submit">Finalizar y enviar resultado</button>
+    <p class="nota">El resultado será enviado automáticamente a la responsable de la capacitación.</p>
+  </form>
+</main>
+<script>
+  const form=document.getElementById('evaluacion');
+  form.addEventListener('submit',e=>{
+    if(!form.checkValidity()){e.preventDefault();document.getElementById('error').style.display='block';form.reportValidity();return}
+    const correctas={P1_Calidad:'B',P2_Norma_ISO:'A',P3_Implementacion:'B',P4_Procedimiento:'A',P5_Registros:'C',P6_No_conformidad:'A',P7_Calibracion:'B'};
+    let aciertos=0;for(const[nombre,letra]of Object.entries(correctas)){const v=new FormData(form).get(nombre)||'';if(v.startsWith(letra+' -'))aciertos++}
+    document.getElementById('puntaje').value=aciertos+' de 7 respuestas correctas';
+    document.getElementById('porcentaje').value=(aciertos/7*100).toFixed(2).replace('.',',')+' %';
+    document.getElementById('resultado').value=aciertos>=5?'APROBADO':'REPROBADO';
+  });
+</script>
+</body>
+</html>
